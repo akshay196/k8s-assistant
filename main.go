@@ -88,7 +88,7 @@ func main() {
 
 			// act on response received
 			blocks := extractBlocks(msg)
-			if blocks == nil {
+			if len(blocks) == 0 {
 				fmt.Println("No command to run")
 				continue
 			}
