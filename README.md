@@ -10,3 +10,8 @@ Start k8s-assistant:
 ```bash
 go run main.go
 ```
+
+## Roadmap
+
+- [ ] Accept flags to customize app behaviour.
+- [ ] (UX) Stream executing command output to stdout instead of printing all at once.
