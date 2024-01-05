@@ -117,12 +117,6 @@ func extractBlocks(input string) []string {
 	return result
 }
 
-func extractBlocksA(input string) [][]string {
-	regex := regexp.MustCompile(`(?s)\x60\x60\x60bash(.*?)\x60\x60\x60`)
-	matches := regex.FindAllStringSubmatch(input, -1)
-	return matches
-}
-
 func executeCommand(command string) (string, error) {
 	cmd := exec.Command("bash", "-c", command)
 	output, err := cmd.CombinedOutput()
